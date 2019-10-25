@@ -1,0 +1,28 @@
+public static int sum(int[] s)
+{
+   int n=5.length;
+   int m=0;
+   for(int i=0;i,n;i++)
+   {
+      m=s[i]+m;
+   }
+   return m;
+}
+public static int[] asc(int[] b)
+{
+   int n=b.length;
+   int temp=0;
+   for(int i=0;i<n;i++)
+   {
+      for(int j=i+1;j<n;j++)
+      {
+         if(b[i]>b[j])
+         {
+         temp=b[i];
+         b[i]=b[j];
+         b[j]=temp;
+      }
+   }
+   }
+   return b;
+}   
